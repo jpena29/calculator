@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>A Simple Calculator</title>
+	<script type="text/javascript" src="calculator.js"></script>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+	<div id="background">
+	<form name = form>
+	<center><input type = text name = t1 value = "" size = 50><p>
+	<input type = button value = " 1 " name = b1 onclick = displaynum(1)>
+	<input type = button value = " 2 " name = b2 onclick = displaynum(2)>
+	<input type = button value = " 3 " name = b3 onclick = displaynum(3)>
+	<input type = button value = " + " name = bplus onclick = operator("+")><br>
+	
+	<input type = button value = " 4 " name = b4 onclick = displaynum(4)>
+	<input type = button value = " 5 " name = b5 onclick = displaynum(5)>
+	<input type = button value = " 6 " name = b6 onclick = displaynum(6)>
+	<input type = button value = " - " name = bminus onclick = operator("-")><br>
+	
+	<input type = button value = " 7 " name = b7 onclick = displaynum(7)>
+	<input type = button value = " 8 " name = b8 onclick = displaynum(8)>
+	<input type = button value = " 9 " name = b9 onclick = displaynum(9)>
+	<input type = button value = " * " name = bmultiply onclick = operator("*")><br>
+	
+	<input type = button value = " . " name = bdot onclick = displaynum(".")>
+	<input type = button value = " 0 " name = b0 onclick = displaynum(0)>
+	<input type = button value = " = " name = bequals onclick = equals()>
+	<input type = button value = " / " name = bdivide onclick = operator("/")><br>
+	
+	<input type = button value = " -+ " name = bnegate onclick = negation()>
+	<input type = button value = "clear" name = bclear onclick = reset()>
+	<input type = button value = " ! " name = bfact onclick = fact()>
+	<input type = button value = " nCr " name = bcombination onclick = operator("nCr")><br>
+	
+	<input type = button value = " nPr " name = bpermutation onclick = operator("nPr")><br>
+	
+	<input type = button value = "Prime" name = bprime onclick = prime(t1.value)>
+	</center>
+	</form>
+	</div>
+</body>
+</html>
